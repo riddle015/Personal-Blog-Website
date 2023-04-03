@@ -1,0 +1,217 @@
+
+/* small screen */
+.container {
+    display: grid;
+    width: 100vw;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: 95vw;
+    grid-gap: 0px;
+    grid-auto-rows: minmax(50px, auto);
+    /*grid-template-rows: 20vh 30vh 30vh 10vh; */
+    grid-template-areas:
+    "top"
+    "second"
+    "third"
+    "fourth"
+    "fifth"
+    "bottom";
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: space-between;
+    border: 4px solid #D3D3D3;
+    border-radius: 10px;
+    padding: 3px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 95%;
+    padding: 10px;
+    height: 200px;
+}
+
+h1 {
+    font-style: "Arial";
+    color: darkslategray;
+    font-size: 1.5em;
+}
+
+#one {
+    grid-area: top;
+}
+#two {
+    grid-area: third;
+}
+#three {
+    grid-area: fifth;
+}
+#four {
+    grid-area: bottom;
+    background: #D3D3D3; 
+    margin-top: 5px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#sixth {
+    grid-area: second;
+}
+#fifth {
+    grid-area: fourth;
+}
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+button {
+    color: #6495ed;
+    background-color: #ffffff;
+    border: 1px solid #6495ed;
+    height: 40px;
+    border-radius: 5px;
+    width: 50%;
+}
+#first {
+    background-image: url('../images/stock photo 1.jpg');
+    background-size: contain;
+    color: white;
+}
+#second {
+    background-image: url('../images/stock photo 2.jpg');
+    background-size: contain;
+    color: white;
+}
+#third {
+    background-image: url('../images/stock photo 3.png');
+    background-size: contain;
+}
+#fourth {
+    background-image: url('../images/stock photo 4.jpg');
+    background-size: contain;
+    color: white;
+}
+
+/* large screen */
+@media(min-width:900px) {
+    .container {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 24vw 24vw 24vw 24vw;
+        grid-gap: 0px;
+        grid-template-rows: 100px 50px 600px 50px;
+        grid-template-areas:
+        "top top top top"
+        "secondLeft secondRight secondRight secondRight"
+        "middleLeft middleRight middleRight middleRight"
+        "bottom bottom bottom bottom";
+    }
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: space-between;
+        border-radius: 10px;
+        padding: 3px;
+        flex-wrap: wrap;
+    }
+    .box h2 {
+        display: inline-block;
+        align-self: flex-start;
+    }
+    .post {
+        border: 4px solid #D3D3D3;
+        margin: 10px;
+        width: 250px;
+        height: 200px;
+        display: block;
+        padding: 10px;
+    }
+    #one {
+        grid-area: top;
+        font-style:"Arial";
+        color: "blue";
+        margin-bottom: 0;
+        background-color: white;
+        margin-bottom: 5px;
+        border:1px solid white;
+
+    }
+    #two {
+        grid-area: middleLeft;
+        flex-direction: column;
+        justify-content: start;
+    }
+    #three {
+        grid-area: middleRight;
+    }
+    #four {
+        grid-area: bottom;
+        background: #D3D3D3; 
+        margin-top: 5px;
+        border: none;
+    }
+    #fifth {
+        grid-area: secondRight;
+    }
+    #sixth {
+        grid-area: secondLeft;
+    }
+
+    h1 {
+        font-style: "Arial";
+        
+        font-size: 2em;
+    }
+
+    a {
+        color: #6495ed;
+    }
+
+    .date {
+        color: grey;
+        font-size: .75em;
+        line-height: 0px;
+    }
+    .title {
+        font-style: "Candara";
+    }
+
+    ul {
+        list-style-type: none;
+    }
+    #first {
+        background-image: url('../images/stock photo 1.jpg');
+        background-size: contain;
+        color: white;
+    }
+    #second {
+        background-image: url('../images/stock photo 2.jpg');
+        background-size: contain;
+        color: white;
+    }
+    #third {
+        background-image: url('../images/stock photo 3.png');
+        background-size: contain;
+    }
+    #fourth {
+        background-image: url('../images/stock photo 4.jpg');
+        background-size: contain;
+        color: white;
+    }
+
+}
