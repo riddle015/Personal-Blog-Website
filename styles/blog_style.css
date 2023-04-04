@@ -3,7 +3,7 @@ p {
     font-size: 1.1em;
 }
 
-.container {
+.blog-container {
     display: grid;
     width: 100vw;
     justify-content: center;
@@ -44,7 +44,7 @@ footer {
     color: white;
 }
 @media(min-width: 900px) {
-    .container {
+    .blog-container {
         display: grid;
         width: 98vw;
         grid-template-columns: 70vw 18vw;
@@ -54,6 +54,7 @@ footer {
         "top top"
         "secondLeft secondRight"
         "third third"
+        
     }
     #one {
         grid-area: top;
@@ -61,7 +62,7 @@ footer {
     article {
         grid-area: secondLeft;
     }
-    footer {
+    #blog-footer {
         grid-area: third;
     }
     .author {

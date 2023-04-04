@@ -1,0 +1,17 @@
+footer {
+    grid-area: bottom;
+    background: #D3D3D3; 
+    margin-top: 5px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+@media(min-width: 900px) {
+    footer {
+        grid-area: bottom;
+        background: #D3D3D3; 
+        margin-top: 5px;
+        border: none;
+    }
+}
