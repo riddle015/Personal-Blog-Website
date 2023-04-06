@@ -61,12 +61,16 @@ footer {
     }
     article {
         grid-area: secondLeft;
+        background-color: white;
+        padding: 10px;
     }
     #blog-footer {
         grid-area: third;
     }
     .author {
         grid-area: secondRight;
+        background-color: white;
+        margin-left: 4px;
     }
 }
 
